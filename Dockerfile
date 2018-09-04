@@ -1,4 +1,4 @@
-FROM php:5.6.33
+FROM php:5.6-cli-jessie
 
 RUN apt-get update && apt-get install -qy git curl libmcrypt-dev mysql-client unzip libxml2-dev zlib1g-dev sqlite3 p7zip-full rsync
 RUN apt-get clean -y && docker-php-ext-install soap
